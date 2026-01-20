@@ -31,7 +31,17 @@ int main(){
      printf("Nhập giá trị c: ");
     scanf("%f", &c);
     if(a==0)
-    printf("Phương trình trở thành b*x + c = 0");
+    {
+        if(b==0 && c==0)
+        printf("Phương trình có vô số nghiệm");
+        else if(b==0 && c!=0)
+        printf("Phương trình vô nghiệm");
+        else 
+        {
+            X = -c/b;
+            printf("Phương trình có nghiệm x = %.2f", X);
+        }
+    }
     else if(a!=0)
     {
         delta = b*b - 4*a*c;
@@ -50,12 +60,6 @@ int main(){
         }
     
     }
-    // Khai báo biến
-
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+    
 
 }

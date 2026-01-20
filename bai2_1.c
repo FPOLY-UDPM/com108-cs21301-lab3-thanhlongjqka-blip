@@ -27,7 +27,7 @@ int main(){
     printf("Phương trình có vô số nghiệm");
     else if(a==0 && b!=0)
     printf("Phương trình vô nghiệm");
-    else 
+    else if(a!=0 && b!=0)
     X = -b/a;
     printf("Phương trình có nghiệm x = %.2f\n", X);
     // Khai báo biến
