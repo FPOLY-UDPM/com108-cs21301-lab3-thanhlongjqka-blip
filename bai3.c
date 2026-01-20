@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Nguyễn Thanh Long]
+ * MSSV:      [PS49311]
+ * Lớp:       [CS21301]
  *****************************************************************************/
 
 //  BÀI 3: XÂY DỰNG CHƯƠNG TRÌNH TÍNH TIỀN ĐIỆN 
@@ -11,7 +11,16 @@
 #include <stdio.h>
 
 int main(){
-    
+    int soDien;
+    float tienDien;
+    int donGia = 3000;
+    printf("Nhập số tiền điện tiêu thụ hàng tháng: ");
+    scanf("%d", &soDien);
+    if(soDien <0)
+    printf("số điện không hợp lệ");
+    else
+    tienDien = soDien * donGia;
+    printf("Số tiền cần phải đóng là: %.3fvnd\n", tienDien);    
     // Khai báo biến
 
 
